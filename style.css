@@ -1,0 +1,307 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar-brand .logo {
+    margin-right: 10px;
+}
+/* Adjust carousel height to fit the screen */
+.carousel-inner {
+    height: auto; 
+    max-height: 700px; 
+    overflow: hidden; 
+}
+
+.carousel-inner img {
+    object-fit: cover; /* Keeps the aspect ratio of images */
+    width: 100%; /* Ensures images span the full width */
+    height: 100%; /* Matches the height of the carousel */
+}
+
+.carousel-caption {
+    top: 50%; /* Vertically centers the caption */
+    transform: translateY(-50%);
+    bottom: auto; /* Prevents caption from sticking to the bottom */
+}
+
+/* About Section Styling */
+#about {
+    background-color: #f8f9fa;
+}
+
+#about .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Make image container height equal to text */
+}
+
+#about img {
+    width: 100%; /* Ensure the image spans the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Limit the maximum height */
+    object-fit: cover; /* Ensures the image fits perfectly */
+}
+
+#about h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+#about a.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about a.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Services Section Styling */
+#services {
+    background: #f8f9fa;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#services p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.service-card {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-card .icon {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.service-card h5 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.service-card p {
+    color: #555;
+}
+
+/* Animations */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Testimonials Section Adjustments */
+#testimonials {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 40px 0; /* Reduce padding to shrink the section height */
+    padding-bottom: 20px !important;
+}
+
+#testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Reduce space below the heading */
+    color: #333;
+}
+
+#testimonials .carousel-inner {
+    padding-top: 10px; /* Slight spacing above the carousel items */
+    padding-bottom: 10px; /* Reduce bottom spacing of carousel items */
+}
+
+.testimonial-box {
+    height: 260px; /* Reduce height of the testimonial box */
+    max-height: 260px; /* Enforce consistent height */
+    overflow: hidden; /* Hide overflowing content */
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px; /* Add inner padding for better readability */
+}
+
+.testimonial-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-img {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #007bff;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial-box h5 {
+    font-size: 1rem;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial-text {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.4;
+    margin-top: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden; /* Hide extra text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit text to 3 lines */
+    -webkit-box-orient: vertical;
+}
+/* Remove extra space below the testimonials section */
+#testimonials {
+    padding-bottom: 20px !important; /* Reduce bottom padding */
+}
+
+/* Adjust carousel inner spacing */
+#testimonials .carousel-inner {
+    margin-bottom: 0; /* Ensure no extra margin at the bottom */
+    padding-bottom: 0; /* Remove padding below carousel items */
+}
+
+/* Adjust row spacing inside testimonials */
+#testimonials .row {
+    margin-bottom: 0; /* Remove row bottom margin */
+    padding-bottom: 0; /* Remove row bottom padding */
+}
+
+/* Ensure bottom alignment for the carousel controls */
+#testimonials .carousel-control-prev,
+#testimonials .carousel-control-next {
+    bottom: auto; /* Prevent controls from adding height */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#contact img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact .form-control {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+#contact button {
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+}
+
+#contact button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #007bff; /* Blue background */
+    color: white;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+footer ul li i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons i {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons i:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+footer hr {
+    border-color: rgba(255, 255, 255, 0.2); /* Light white line */
+}
+
